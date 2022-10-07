@@ -30,8 +30,8 @@ public class UserController {
     private PatternProperties sharedEnvironmentValue;
 
     @GetMapping("/prop")
-    public String getProp(){
-        return sharedEnvironmentValue.getSharedEnvironmentValue();
+    public PatternProperties getProp(){
+        return sharedEnvironmentValue;
     }
 
     @GetMapping("/now")
